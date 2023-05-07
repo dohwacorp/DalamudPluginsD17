@@ -1,14 +1,15 @@
 [plugin]
 repository = "https://github.com/kaleidocli/BozjaBuddy.git"
-commit = "c2c4e05bd83ff09e682a068c789ceb601af3115f"
+commit = "3daf957f0fbaaa3ad10ccf33be239d32e3e21aac"
 owners = ["kaleidocli"]
 project_path = "BozjaBuddy"
 changelog = """
-BB 0.2.2.3
+Bozja Buddy 0.3.0.3
 
-- In Fate/CE table, amount of time ago in Status column is made sortable value
+- Added option for Fate/CE alarms to be set to all FATEs, all CEs, all FATE/CEs, and can be filtered by zone (e.g. Zadnor zone 3). These options exclude CLL, Dalriada, Delubrum Reginae Normal & Savage.
 
-- Fix a bug where changes to the on-off button of an Alarm in Alarm window would save to memory, but not to disk.
-- Fix a bug in Fate/CE alarm creation pop up where the drop down for Fate/CE wouldn't work properly.
-- Fix a bug where user's configs would get wiped after new update.
+- Fixed a bug in Custom loadout tab where the whole tab would be unavailable upon using any Custom loadout Filter related features.
+- Fixed a bug in Custom loadout tab where disabling rec. loadouts would also hide user's loadouts.
+- Fixed a bug (hopefully) in Custom loadout tab where the Import from Clipboard button would not work properly. 
+- Fixed a bug where Fate/CEs would be assigned incorrect Area.
 """

@@ -13,21 +13,21 @@ jobs:
     - name: Checkout manifests
       uses: actions/checkout@v3
       with:
-        repository: dohwacorp/DalamudPluginsD17
+        repository: goatcorp/DalamudPluginsD17
         path: manifests
         ref: ${{ github.event.pull_request.head.sha }}
 
     - name: Checkout Plogon
       uses: actions/checkout@v3
       with:
-        repository: dohwacorp/Plogon
+        repository: goatcorp/Plogon
         #ref: V1.0.6
         path: Plogon
         
     - name: Checkout Dist
       uses: actions/checkout@v3
       with:
-        repository: dohwacorp/PluginDistD17
+        repository: goatcorp/PluginDistD17
         path: output
         ssh-key: ${{ secrets.DIST_SSH_KEY }}
         persist-credentials: true
@@ -41,7 +41,7 @@ jobs:
     - name: Cache docker image
       uses: actions/cache@v3
       env:
-        cache-name: plogon
+        cache-name: ${{ secrets.EXTENDED_IMAGE_LINK }}
       with:
         path: ~/.plogon_cache
         key: cache-${{ env.cache-name }}
@@ -52,6 +52,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         EXTENDED_IMAGE_LINK: ${{ secrets.EXTENDED_IMAGE_LINK }}
+        XLWEB_KEY: ${{ secrets.XLWEB_KEY }}
       run: |
         dotnet run -- \
         --manifest-folder="${{ github.workspace }}/manifests" \
@@ -84,3 +85,9 @@ jobs:
         directory: output
         repository: goatcorp/PluginDistD17
         ssh: true
+        
+    - name: Signal XLWeb commit
+      run: |
+        curl --request POST \
+        --url https://kamori.goats.dev/Plogon/CommitStagedPlugins \
+        --header 'X-XL-Key: ${{ secrets.XLWEB_KEY }}'
