@@ -1,0 +1,10 @@
+[plugin]
+repository = "https://github.com/Berna-L/ffxiv-tf2-hud-plugin.git"
+commit = "94d5561b6af1891e9672e1be96b06b864c829169"
+owners = ["Berna-L"]
+project_path = "Tf2Hud"
+changelog = """
+- Clarified what works and what doesn't work without TF2 installed.
+- Fixed FlyText (damage info) not showing with the plugin enabled. (Thanks, HuiEtyud!)
+"""
+

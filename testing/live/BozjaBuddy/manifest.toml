@@ -1,0 +1,14 @@
+[plugin]
+repository = "https://github.com/kaleidocli/BozjaBuddy.git"
+commit = "c2c4e05bd83ff09e682a068c789ceb601af3115f"
+owners = ["kaleidocli"]
+project_path = "BozjaBuddy"
+changelog = """
+BB 0.2.2.3
+
+- In Fate/CE table, amount of time ago in Status column is made sortable value
+
+- Fix a bug where changes to the on-off button of an Alarm in Alarm window would save to memory, but not to disk.
+- Fix a bug in Fate/CE alarm creation pop up where the drop down for Fate/CE wouldn't work properly.
+- Fix a bug where user's configs would get wiped after new update.
+"""

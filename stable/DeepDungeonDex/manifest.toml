@@ -1,0 +1,7 @@
+[plugin]
+repository = "https://github.com/wolfcomp/DeepDungeonDex.git"
+owners = [ "wolfcomp" ]
+project_path = "DeepDungeonDex"
+commit = "7388338a1ae8c194fc1713d9343600c6af108b12"
+changelog = "### 2.5.4 (2023-04-14)\n\n\n### Bug Fixes\n\n* crashing due to corrupt plugin directory (b198cbc)"
+version = "2.5.4"

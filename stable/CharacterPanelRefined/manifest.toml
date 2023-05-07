@@ -1,0 +1,8 @@
+[plugin]
+repository = "https://github.com/Kouzukii/ffxiv-characterstatus-refined.git"
+commit = "23be700a36e7af697cc05f13cc1d702e32992d71"
+owners = ["Kouzukii"]
+project_path = "CharacterPanelRefined"
+changelog = """
+Fixed a bug that broke the character panel when "Show item level information" was disabled
+"""
