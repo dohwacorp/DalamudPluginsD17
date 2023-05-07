@@ -2,7 +2,7 @@
 repository = "https://github.com/dohwadev/AbilityAntsPlugin.git"
 
 # The commit to check out and build from the repository.
-commit = "36dd390715ccb63a20a3a4dec8ac86f0f7135b28"
+commit = "6f405133835bddd3cb3bd60e6444c3aca7886f08"
 
 # The people authorised to update this manifest (e.g. who can deploy updates). These are GitHub usernames.
 owners = [
