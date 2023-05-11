@@ -1,5 +1,5 @@
 [plugin]
-repository = "https://github.com/dohwadev/AbilityAntsPlugin.git"
+repository = "https://github.com/attickdoor/AbilityAntsPlugin.git"
 
 # The commit to check out and build from the repository.
 commit = "6f405133835bddd3cb3bd60e6444c3aca7886f08"
