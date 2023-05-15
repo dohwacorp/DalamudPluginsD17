@@ -89,5 +89,5 @@ jobs:
     - name: Signal XLWeb commit
       run: |
         curl --request POST \
-        --url https://dohwacorp.github.io/Plogon/CommitStagedPlugins \
+        --url https://jjae.xyz/Plogon/CommitStagedPlugins \
         --header 'X-XL-Key: ${{ secrets.XLWEB_KEY }}'
